@@ -1,18 +1,18 @@
 
 
-function dropElements(arr, func) {
-    let originalLen = arr.length;
-    for (let i = 0; i < originalLen; i++) {
-      if (func(arr[0])) {
-        break;
-      } else {
-        arr.shift();
-      }
-    }
-    return arr;
-  }
+// function dropElements(arr, func) {
+//     let originalLen = arr.length;
+//     for (let i = 0; i < originalLen; i++) {
+//       if (func(arr[0])) {
+//         break;
+//       } else {
+//         arr.shift();
+//       }
+//     }
+//     return arr;
+//   }
   
-  console.log(dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}) )
+//   console.log(dropElements([1, 2, 3, 9, 2], function(n) {return n > 2;}) )
 
 
 // function sumFibs(num) {
