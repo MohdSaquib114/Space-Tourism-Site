@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 .section{
     background-image: url('../assets/destination/background-destination-desktop.jpg');
     background-position: center;
@@ -5,12 +7,113 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    
+    color: rgb(255,255,255);
+   display: grid;
+   place-content:center center;
+}
+.h3{
+    color: rgb(255,255,255);
+    letter-spacing: .2rem;
+    font-size: 1.9rem;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif; 
+   word-spacing: .5rem;
+   justify-self: left;
+   align-self: start;
+   /* margin-left: 10 rem; */
+   /* line-height: .1rem; */
+
+}
+.h3>span{
+ 
+        
+        color:hsl(220, 7%, 32%);
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10rem;
+}
+.container>img{
+    justify-self: center;
+    align-self:flex-start;
+    width: 430px;
+}
+.ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    height: 30px;
+   
 }
 
-
+.li{
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-size: 1.2rem;
+    color: rgb(208,214,249);
+    letter-spacing: .3rem;
+    cursor: pointer;
+}
+.ul>li:hover{
+    border-bottom: .1rem solid rgb(255,255,255);
+    color: rgb(255,255,255);
+}
+.liIsClicked{
+    font-family: 'Barlow Condensed', sans-serif; 
+    font-size: 1.2rem;
+    color: rgb(208,214,249);
+    letter-spacing: .3rem;
+    cursor: pointer;
+    border-bottom: .1rem solid rgb(255,255,255);
+    color: rgb(255,255,255); 
+}
+.h1{
+    font-size: 6rem;
+    letter-spacing: 1.3rem;
+    font-family: 'Bellefair', serif;
+    /* line-height: .1rem; */
+ margin: 1rem 0;
+}
+.p{
+    color: rgb(208,214,249);
+    font-family:  'Barlow Condensed', sans-serif; 
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+.hr{
+    border:0.5px solid rgb(208,214,249);
+}
+.specContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.specContainer>h5>span{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: rgb(208,214,249);
+    letter-spacing: .1rem;
+    font-size: .8rem;
+}
+.specContainer>h5{
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    font-weight: 400;
+    font-family: 'Bellefair', serif;
+}
+.article{
+    width: 500px;
+}
 @media (max-width:970px) {
     .section{
         background-image: url('../assets/destination/background-destination-tablet.jpg');
+    }
+    .container{
+        grid-template-columns: auto;
     }
 }
 

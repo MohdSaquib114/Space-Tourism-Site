@@ -1,3 +1,54 @@
+// function palindrome(str) {
+//     const newStr = str.toLowerCase().replaceAll(/[^a-z0-9]/g,'')
+  
+//    let revStr=''
+//    for(let i=newStr.length-1; i>=0; i--){
+   
+
+//     revStr+=newStr[i]
+//    }
+//    if(revStr === newStr) return true
+//    return false
+    
+//   }
+  
+// console.log(  palindrome("_eye") )
+
+
+
+// function sumPrimes(num) {
+ 
+//   let currentNo=2
+//   let sum=0
+//   while(currentNo<=num){
+//     if(primeChecker(currentNo)) sum+=currentNo
+//     currentNo=currentNo+1
+//   }
+//   return sum
+//   }
+  
+//   function primeChecker(num){
+//     if(num===2) return true
+//     let curr=2
+//     while(curr<num){
+        
+//       if(num%curr===0) {
+//         return false
+//       } 
+//       curr++
+//     }
+//     return true
+
+//   }
+//   sumPrimes(4);
+
+
+
+
+
+
+
+
 
 
 // function dropElements(arr, func) {
