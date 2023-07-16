@@ -134,6 +134,9 @@
     .article>h1{
         font-size: 4.5rem;
     }
+    .article>h5{
+font-size: .6rem;
+    }
     .btn{
         width: 300px;
         height: 300px;

@@ -5,7 +5,7 @@ const Home = () => {
   return (
    <section className={style.section}>
 <article className={style.article}>
-  <h5 style={{color:'rgb(208, 214, 249)',letterSpacing:'.5rem', lineHeight:'0rem'}}>SO, YOU WANGT TO TRAVEL TO</h5>
+  <h5 style={{color:'rgb(208, 214, 249)',letterSpacing:'.5rem', lineHeight:'0rem'}}>SO, YOU WANT TO TRAVEL TO</h5>
   <h1 style={{color:'rgb(255,255,255)',lineHeight:'0rem'}}>SPACE</h1>
   <p style={{color:'rgb(208, 214, 249)',lineClamp:'3',fontWeight:'200'}}>Let’s face it; if you want to go to space, you might
      as well genuinely go to outer space and not hover kind 
