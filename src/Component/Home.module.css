@@ -78,17 +78,23 @@
         grid-template-columns: auto;
         gap: 0;
         background-image: url('../assets/home/background-home-tablet.jpg');
-        /* background-size: contain; */
+        background-size: cover;
         width: 100%;
         height: max-content;
-        padding-top: 200px;
+        /* padding-top: 200px; */
+        /* top: 50%; / */
+    }
+    .container{
+        position: relative;
+        top: 25%;
+        transform:translateY(25%-25px);
     }
     
 }
 @media (max-width:630px) {
     .section{
         background-image: url('../assets/home/background-home-mobile.jpg');
-        background-size: cover;
+        background-size: auto;
     }
     .article{
        width: 400px;
