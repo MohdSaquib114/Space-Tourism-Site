@@ -4,7 +4,7 @@ import style from './Home.module.css'
 const Home = () => {
   return (
    <section className={style.section}>
-    <div className={style.container}><article className={style.article}>
+<article className={style.article}>
   <h5 style={{color:'rgb(208, 214, 249)',letterSpacing:'.5rem', lineHeight:'0rem'}}>SO, YOU WANGT TO TRAVEL TO</h5>
   <h1 style={{color:'rgb(255,255,255)',lineHeight:'0rem'}}>SPACE</h1>
   <p style={{color:'rgb(208, 214, 249)',lineClamp:'3',fontWeight:'200'}}>Let’s face it; if you want to go to space, you might
@@ -15,8 +15,6 @@ const Home = () => {
 <button className={style.btn}>
  <div> EXPLORE</div>
 </button>
-</div>
-
    </section>
 
   )

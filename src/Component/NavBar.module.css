@@ -9,7 +9,6 @@ right: 0;
 top: 1rem;
 z-index: 10000;
 font-family: 'Barlow Condensed', sans-serif;  
-/* left: 4.5rem; */
 
 }
 .ul{justify-self: center;
@@ -76,7 +75,7 @@ top:0
 } 
 .logo{
     justify-self: left;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 /* .link{
     font-size: .8rem;
@@ -87,16 +86,18 @@ top:0
 .nav{
     position: fixed;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+   width: 100%;
     left: 0;
 }
 .hamburgerLogo{
     justify-self: right;
     margin-right: 1.2rem;
+   
 }
 .logo{
     justify-self: left;
     margin-left: 1.2rem;
+    /* margin: 0; */
 }
 .ul{
     position: fixed;
@@ -113,4 +114,7 @@ top:0
    /* background-color:  rgb(255 255 255 / 0.1);
    backdrop-filter: blur(4px); */
 }
+}
+@media (max-width:400px) {
+    
 }
