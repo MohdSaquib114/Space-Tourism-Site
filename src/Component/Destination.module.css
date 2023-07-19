@@ -5,9 +5,9 @@
     background-position: center;
     background-size: cover;
     position: absolute;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    
+    gap: 1.5rem;
     color: rgb(255,255,255);
    display: grid;
    place-content:center center;
@@ -21,8 +21,7 @@
    word-spacing: .5rem;
    justify-self: left;
    align-self: start;
-   /* margin-left: 10 rem; */
-   /* line-height: .1rem; */
+
 
 }
 .h3>span{
@@ -35,6 +34,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 10rem;
+    /* margin-top: 2rem; */
 }
 .container>img{
     justify-self: center;
@@ -84,7 +84,8 @@
     line-height: 2rem;
 }
 .hr{
-    border:0.5px solid rgb(208,214,249);
+    border:0.5px solid rgb(183, 188, 215);
+    margin: 1.5rem 0;
 }
 .specContainer{
     display: grid;
@@ -111,15 +112,36 @@
 @media (max-width:970px) {
     .section{
         background-image: url('../assets/destination/background-destination-tablet.jpg');
+        min-width: 100%;
+        height: inherit;
+        padding-top: 25%;
+        gap: 4rem;
     }
     .container{
         grid-template-columns: auto;
+        gap: 4rem;
     }
+.ul{
+justify-content: center;
 }
+
+.h1,.p,.specContainer>h5{
+    text-align: center;
+}
+
+}
+
 
 
 @media (max-width:630px) {
     .section{
         background-image: url('../assets/destination/background-destination-mobile.jpg');
+    }
+    .img{
+      width: 100px;
+    }
+    .h3{
+    justify-self: center;
+    font-size: 1.5rem;
     }
 }

@@ -15,9 +15,9 @@ const Destination = () => {
     <section className={style.section}>
       <h3 className={style.h3}><span>01</span> PICK YOUR DESTINATION</h3>
       <div className={style.container}>
-      <img src={currentDestination.image} alt={'terrestial-body-img'}/>  
+      <img className={style.img} src={currentDestination.image} alt={'terrestial-body-img'}/>  
       <article className={style.article}>
-        <ul className={style.ul} onClick={(e)=>console.log(e.target.innerHtml)}>
+        <ul className={style.ul} >
         {destination.map((destination,index)=><li  key={destination.destination} className={destination.isClicked?style.liIsClicked:style.li} onClick={()=>onDestiinationChng(index)} >{destination.destination}</li>)}
         </ul>
         <h1 className={style.h1}>{currentDestination.destination}</h1>
