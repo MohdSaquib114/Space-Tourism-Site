@@ -1,3 +1,141 @@
+
+
+// function convertToRoman(num) {
+//     const romanVal ={
+//     M:	1000,
+// CM:	900,
+// D:	500,
+// CD:	400,
+// C	:100,
+// XC:	90,
+// L	:50,
+// XL:	40,
+// X	:10,
+// IX:	9,
+// V:	5,
+// IV:	4,
+// I:	1}
+//    }
+//    while(num<=0){
+    
+//    }
+   
+//    convertToRoman(36);
+
+
+
+
+
+
+
+// function telephoneCheck(str) {
+//    const phnLn= str.length;
+//    const reg = /[a-zA-Z?*&!#;:]+/g
+//    if(phnLn<10||reg.test(str)) return false
+//    const regN= /[0-9]/
+//    let onlyNum = ''
+//    for(let i=0 ; i<phnLn; i++){
+//     if(regN.test(str[i])) onlyNum+=str[i]
+//    }
+//    if(onlyNum>10) return /^1()/.test(onlyNum)
+  
+//   }
+  
+//   console.log(telephoneCheck("11(555)555-5555"))
+//   *&!#
+
+// function addTogether() {
+// const arr = [...arguments]
+// const r = arr.every(el=> typeof el === 'number')
+// if(!r ) return undefined
+// const first = arr[0]
+// if(arr.length<2){
+//     return function(){
+//         const arr = [...arguments]
+// const r = arr.every(el=> typeof el === 'number')
+// if(!r ) return undefined
+// else return first+arguments[0]
+//     }
+
+// }
+// return arr.reduce((prev,cur)=>prev+cur,0)
+// }
+  
+//  console.log(addTogether(2, "3"))
+
+
+
+
+
+
+// function rot13(str) {
+//     let decodedStr =''
+//     const reg = /[a-zA-Z]/
+//     for(let i =0; i<str.length; i++){
+//         if(reg.test(str[i]) && str[i]!==' '){
+//              let decodedCharCode = str.charCodeAt(i)-13<65?str.charCodeAt(i)+13:str.charCodeAt(i)-13
+//             decodedStr+=String.fromCharCode(decodedCharCode)
+//         }else if(str[i]===' ' || !reg.test(str[i])) decodedStr+=str[i]
+//     }
+//     return decodedStr;
+//   }
+  
+//   console.log(rot13("SERR PBQR PNZC"))
+// let code = 'A'.charCodeAt(0)
+// console.log(code-13<65)
+// console.log(String.fromCharCode(code+13))
+
+// console.log(reg.test('?'))
+
+
+
+
+
+// function truthCheck(collection, pre) {
+//     let truthyVal= true
+//     collection.forEach(element => {
+//      if(!element[pre]||!element.hasOwnProperty(pre)) {truthyVal= false;
+    
+// }
+//     });
+//     return truthyVal;
+//   }
+  
+//  const ans =truthCheck([{id: 1, data: {url: "https://freecodecamp.org", name: "freeCodeCamp"}}, {id: 2, data: {url: "https://coderadio.freecodecamp.org/", name: "CodeRadio"}}, {id: null, data: {}}], "id")
+
+ 
+ 
+//  console.log(ans)
+// if(NaN) console.log('df')
+
+
+
+
+
+
+// function binaryAgent(str) {
+//     return str.split(' ').map(binNum=>codetoChar(binNum)).join('')
+//   }
+//   function codetoChar(binNo){
+//     const binLn = binNo.length-1
+//     let charCode=0
+//     for(let i=0; i<=binLn; i++){
+       
+//         if(binNo[binLn-i]==='1'){
+//          charCode+=2**i
+//         }
+//     }
+//    return String.fromCharCode(charCode)
+//   }
+
+
+
+
+
+
+
+
+
 // function palindrome(str) {
 //     const newStr = str.toLowerCase().replaceAll(/[^a-z0-9]/g,'')
   

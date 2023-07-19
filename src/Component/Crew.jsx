@@ -5,18 +5,18 @@ import crewData from './CrewData'
 
 const Crew = () => {
   const [index, setIndex] = useState(0)
-  // useEffect(()=>{
+  useEffect(()=>{
   
-  // const intervalId = setInterval(()=>{
-  //    const newIndex= index
-  //    if(newIndex<3){
-  //     setIndex(newIndex+1)}
-  //     else{
-  //       setIndex(0)
-  //     }
-  //  },3000)
-  //   return ()=>clearInterval(intervalId)
-  // })
+  const intervalId = setInterval(()=>{
+     const newIndex= index
+     if(newIndex<3){
+      setIndex(newIndex+1)}
+      else{
+        setIndex(0)
+      }
+   },3000)
+    return ()=>clearInterval(intervalId)
+  })
 
   
   const crewChangeHandler = (index) =>{
@@ -38,6 +38,7 @@ const Crew = () => {
       </div>
      </article>
      <img className={style.img} src={crewData[index].image} alt='Crew-members-images'/>
+     <hr  className={style.hr}/>
      </div>
     </section>
 
