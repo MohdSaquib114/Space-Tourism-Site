@@ -1,10 +1,11 @@
 import React from 'react'
+import style from './Technology.module.css'
 
 const Technology = () => {
   return (
-    <div>
-      <h1>Technology</h1>
-    </div>
+   <section className={style.section}>
+
+   </section>
   )
 }
 

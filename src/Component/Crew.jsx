@@ -14,7 +14,7 @@ const Crew = () => {
       else{
         setIndex(0)
       }
-   },3000)
+   },2500)
     return ()=>clearInterval(intervalId)
   })
 
@@ -27,9 +27,9 @@ const Crew = () => {
     <div className={style.div}>
      <h3 className={style.h3}><span>02</span> MEET YOUR CREW</h3>
      <article className={style.article}>
-      <h3 className={style.role}>{crewData[index].role}</h3>
-      <h1 className={style.h1}>{crewData[index].name}</h1>
-      <p className={style.p}>{crewData[index].about}</p>
+      <h3  key={Math.random()} className={style.role}>{crewData[index].role}</h3>
+      <h1  key={Math.random()} className={style.h1}>{crewData[index].name}</h1>
+      <p  key={Math.random()} className={style.p}>{crewData[index].about}</p>
       <div className={style.btnContainer}>
         <button onClick={()=>crewChangeHandler(0)} ></button>
         <button onClick={()=>crewChangeHandler(1)}></button>
@@ -37,7 +37,7 @@ const Crew = () => {
         <button onClick={()=>crewChangeHandler(3)}></button>
       </div>
      </article>
-     <img className={style.img} src={crewData[index].image} alt='Crew-members-images'/>
+     <img  key={Math.random()} className={style.img} src={crewData[index].image} alt='Crew-members-images'/>
      <hr  className={style.hr}/>
      </div>
     </section>

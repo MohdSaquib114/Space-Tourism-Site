@@ -1,0 +1,32 @@
+.section{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+@media (max-width:970px) {
+    .section{
+       
+        background-image: url('../assets/technology/background-technology-tablet.jpg');
+       
+    }
+    
+
+}
+
+@media (max-width:630px) {
+    .section{
+       
+        background-image: url('../assets/technology/background-technology-mobile.jpg');
+       
+    }
+    
+}

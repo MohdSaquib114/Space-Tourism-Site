@@ -42,12 +42,26 @@
                          'name'
                          'description'
                          'buttons';
+
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 
 .img{
     grid-area: image;
   width: 750px;
   height: 750px;
+  animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .btnContainer{
     grid-area: buttons;
@@ -74,6 +88,7 @@
     mix-blend-mode: normal;
 opacity: 0.5;
 line-height: 37px;
+animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .h1{
     grid-area: name;
@@ -83,6 +98,7 @@ line-height: 37px;
     font-weight: 400;
     color: #FFFFFF;
     line-height: 8rem;
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .p{
     grid-area: description;
@@ -94,6 +110,7 @@ font-weight: 400;
 font-size: 1.3rem;
 line-height: 2rem;
 color: #D0D6F9;
+animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 
 }
 .div{
@@ -103,6 +120,7 @@ color: #D0D6F9;
     ;
     place-content:center bottom;
    width: 80vw;
+
 }
 
 .hr{
