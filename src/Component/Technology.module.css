@@ -6,11 +6,113 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    justify-content: end;
+    align-content: center;
+}
+.div{
+    display: grid;
+    grid-template-areas: 'heading heading'
+                         'article image'    
+    ;
+  gap: 2rem;
+
+   width: 80vw;
+
 }
 
 
+.article{
+    grid-area: article;
+display: grid;
+grid-template-areas:'buttons container'
+/* 'buttons name'
+'buttons description' */
+;
+gap: 1rem;
+align-self: center;
 
+}
+.container{
+    grid-area: container;
+    justify-self: center;
+}
+.img{
+    grid-area: image;
+    justify-self: end;
+    height: 600px;
+    width: 500px;
+}
+.h1{
+    grid-area: name;
+    font-family: 'Bellefair';
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 8rem;
+}
+.h5{
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: rgb(208, 214, 249);
+    /* opacity: 0.9; */
+    mix-blend-mode: normal;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 4rem;
+    grid-area: role;
+}
+.p{
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: rgb(208, 214, 249);  
+    font-size: 1.5rem;
+    line-height: 2rem;
+    word-break: keep-all;
+    grid-area: description;
+    height: auto;
+    width: 600px;
+    /* opacity: 0.9; */
+}
 
+.h3{
+    color: rgb(255,255,255);
+    letter-spacing: .2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif; 
+    word-spacing: .5rem;
+    grid-area: heading;
+}
+.h3>span{
+    
+    
+    color:hsl(220, 7%, 32%);
+    
+}
+.btnContainer{
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    gap: 3rem;
+    grid-area: buttons;
+    grid-row-end: 2;
+}
+.btnContainer>button{
+    border-radius: 50%;
+    border: .1rem solid rgba(255,255,255,0.3);
+    
+    width: 80px;
+    height:80px;
+    background-color: transparent;
+    color:  rgba(255,255,255,0.8);
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+.btnContainer>button:hover{
+    border-color:rgb(255,255,255) ;
+    color:  rgb(255,255,255);
+}
 
 @media (max-width:970px) {
     .section{
@@ -26,7 +128,14 @@
     .section{
        
         background-image: url('../assets/technology/background-technology-mobile.jpg');
+        
        
+    }
+    .div{
+        grid-template-areas: 'heading'
+        'image'
+        'article'    
+;
     }
     
 }
