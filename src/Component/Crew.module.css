@@ -70,13 +70,13 @@
 .btnContainer>button{
     border-radius: 50%;
     border-style: none;
-    background-color: hsl(220, 7%, 32%);
+  
     width: 13px;
     height: 13px;
     margin-right: 1.5rem;
 }
 .btnContainer>button:hover{
-    background-color: hsl(224, 7%, 57%);
+    background-color: hsl(226, 23%, 89%);
 }
 
 .role{

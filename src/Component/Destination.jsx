@@ -10,6 +10,14 @@ const Destination = () => {
 
     // const curr=destination[index]
     setCurrDes(destinationData[index])
+    const dataArr = destination.map((data,i)=>{
+           if(i===index) {data.isClicked=true
+            return data
+          }
+          data.isClicked=false
+           return data
+    })
+    setData(dataArr)
   }
   return (
     <section className={style.section}>

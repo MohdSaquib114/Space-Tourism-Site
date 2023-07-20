@@ -46,7 +46,7 @@ font-family: 'Barlow Condensed', sans-serif;
 all: unset;
 cursor: pointer;
 align-self: center;
-font-size: .8rem;
+font-size: 1rem;
 letter-spacing: .2rem;
 
 }
@@ -59,9 +59,20 @@ letter-spacing: .2rem;
 .ul>li:hover{
     /* border-bottom-color: ; */
     border-bottom: .2em solid rgb(208, 214, 249);
-    color:  rgb(208, 214, 249);
-/* filter: brightness(50%); */
+    /* filter: brightness(50%); */
    
+}
+.clicked{
+    border-bottom: .2em solid rgb(208, 214, 249);
+}
+.unclicked{
+    border-style: none;
+}
+.ul:hover> :not(:hover){
+    
+   filter: blur(1px);
+   border-style: none;
+    /* color:  rgb(208, 214, 249); */
 }
 .hamburgerLogo{
     justify-self: right;

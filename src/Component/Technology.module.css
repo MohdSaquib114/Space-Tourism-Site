@@ -105,19 +105,30 @@ align-self: center;
 }
 .btnContainer>button{
     border-radius: 50%;
-    border: .1rem solid rgba(255,255,255,0.3);
+  
     
     width: 80px;
     height:80px;
-    background-color: transparent;
-    color:  rgba(255,255,255,0.8);
+    
     font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Barlow Condensed', sans-serif; 
 }
+.clicked{
+    border-style: none;
+    color: black;
+    background-color: #FFFFFF;
+}
+
+.unclicked{
+    background-color: transparent;
+    color:  rgba(255,255,255,0.8);
+    border: .1rem solid rgba(255,255,255,0.3);
+}
+
 .btnContainer>button:hover{
     border-color:rgb(255,255,255) ;
-    color:  rgb(255,255,255);
+    /* color:  rgb(255,255,255); */
 }
 @keyframes fade-in {
     0%{

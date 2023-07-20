@@ -4,9 +4,15 @@ import data from './TechnologyData.js'
 
 const Technology = ({width}) => {
   const [currentTech, setTech] = useState(data[0])
+  const [isClicked,setClicked] = useState([true,false,false])
   const img  = width<970?currentTech.landScapeImage:currentTech.portraitImage
   const techChngHandler=(index)=>{
     setTech(data[index])
+    const newArr =isClicked.map((val,i)=>{
+      if(i===index) return true
+      else false
+    })
+    setClicked(newArr)
   }
 
   return (
@@ -20,9 +26,9 @@ const Technology = ({width}) => {
       <p   className={style.p}>{currentTech.description}</p>
       </div>
       <div className={style.btnContainer}>
-        <button onClick={()=>techChngHandler(0)}>1</button>
-        <button onClick={()=>techChngHandler(1)}>2</button>
-        <button onClick={()=>techChngHandler(2)}>3</button>
+        <button onClick={()=>techChngHandler(0)} className={isClicked[0]?style.clicked:style.unclicked}>1</button>
+        <button onClick={()=>techChngHandler(1)} className={isClicked[1]?style.clicked:style.unclicked}>2</button>
+        <button onClick={()=>techChngHandler(2)} className={isClicked[2]?style.clicked:style.unclicked}>3</button>
      
       </div>
      </article>

@@ -65,6 +65,9 @@
     border-bottom: .1rem solid rgb(255,255,255);
     color: rgb(255,255,255);
 }
+.ul:hover :not(:hover){
+    border-style: none;
+}
 .liIsClicked{
     font-family: 'Barlow Condensed', sans-serif; 
     font-size: 1.2rem;

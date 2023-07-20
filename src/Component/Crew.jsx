@@ -5,12 +5,16 @@ import crewData from './CrewData'
 
 const Crew = () => {
   const [index, setIndex] = useState(0)
+ 
   useEffect(()=>{
   
   const intervalId = setInterval(()=>{
      const newIndex= index
+     
      if(newIndex<3){
-      setIndex(newIndex+1)}
+       setIndex(newIndex+1)
+      
+      }
       else{
         setIndex(0)
       }
@@ -32,9 +36,9 @@ const Crew = () => {
       <p  key={Math.random()} className={style.p}>{crewData[index].about}</p>
       <div className={style.btnContainer}>
         <button onClick={()=>crewChangeHandler(0)} ></button>
-        <button onClick={()=>crewChangeHandler(1)}></button>
-        <button onClick={()=>crewChangeHandler(2)}></button>
-        <button onClick={()=>crewChangeHandler(3)}></button>
+        <button onClick={()=>crewChangeHandler(1)} ></button>
+        <button onClick={()=>crewChangeHandler(2)} ></button>
+        <button onClick={()=>crewChangeHandler(3)} ></button>
       </div>
      </article>
      <img  key={Math.random()} className={style.img} src={crewData[index].image} alt='Crew-members-images'/>
