@@ -6,7 +6,7 @@ import Technology from './Component/Technology'
 import Destination from './Component/Destination'
 import useCurrentWidth from './Component/useCurrentWidth'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
-import './App.css'
+
 
 const App = () => {
   const width = useCurrentWidth();
