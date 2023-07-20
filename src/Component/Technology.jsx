@@ -14,7 +14,7 @@ const Technology = ({width}) => {
  <div className={style.div}>
      <h3 className={style.h3}><span>03</span> SPACE LAUNCH 101</h3>
      <article className={style.article}>
-      <div className={style.container}>
+      <div key={Math.random()} className={style.container}>
       <h5   className={style.h5}>THE TERMINOLOGY...</h5>
       <h1  className={style.h1}>{currentTech.techName}</h1>
       <p   className={style.p}>{currentTech.description}</p>
@@ -26,7 +26,7 @@ const Technology = ({width}) => {
      
       </div>
      </article>
-     <img   className={style.img} src={img} alt='Crew-members-images'/>
+     <img  key={Math.random()} className={style.img} src={img} alt='Crew-members-images'/>
     
      </div>
    </section>

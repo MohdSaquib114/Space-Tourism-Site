@@ -36,12 +36,15 @@ align-self: center;
 .container{
     grid-area: container;
     justify-self: center;
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .img{
     grid-area: image;
     justify-self: end;
     height: 600px;
     width: 500px;
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
+
 }
 .h1{
     grid-area: name;
@@ -51,6 +54,7 @@ align-self: center;
     font-weight: 400;
     color: #FFFFFF;
     line-height: 8rem;
+  
 }
 .h5{
     font-family: 'Barlow Condensed', sans-serif; 
@@ -61,6 +65,7 @@ align-self: center;
     font-weight: 400;
     line-height: 4rem;
     grid-area: role;
+  
 }
 .p{
     font-family: 'Barlow Condensed', sans-serif; 
@@ -71,6 +76,7 @@ align-self: center;
     grid-area: description;
     height: auto;
     width: 600px;
+   
     /* opacity: 0.9; */
 }
 
@@ -113,12 +119,57 @@ align-self: center;
     border-color:rgb(255,255,255) ;
     color:  rgb(255,255,255);
 }
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
 
 @media (max-width:970px) {
     .section{
        
         background-image: url('../assets/technology/background-technology-tablet.jpg');
        
+
+    }
+    .div{
+       width: 100vw;
+        grid-template-areas: 'heading'
+        'image' 
+        'article'   
+;
+
+    }
+    .img{
+        width: inherit;
+        height: auto;
+        justify-self:center;
+    }
+    .article{
+        text-align: center;
+        grid-template-areas:'buttons'
+                            'container';
+                            gap: 1.5rem;
+    }
+    .btnContainer{
+        flex-flow: row;
+        justify-self: center;
+    }
+    .container{
+        padding-bottom: 6rem;
+    }
+    .h3{
+        margin-left: 3rem;
+    }
+    .div{
+        margin-top: 25%;
     }
     
 
@@ -131,11 +182,32 @@ align-self: center;
         
        
     }
-    .div{
-        grid-template-areas: 'heading'
-        'image'
-        'article'    
-;
+    .article{
+        gap: 1rem;
     }
+  .p{
+    width: auto;
+    font-size: 1rem;
+    padding: 0 .5rem;
+  }
+  .h3{
+    margin: 0;
+    justify-self: center;
+    font-size:1.9rem ;
+  }
+  .btnContainer{
+    gap:2rem ;
+  }
+  .btnContainer>button{
+        
+    width: 60px;
+    height:60px;
+  }
+  .h1{
+    font-size: 3rem;
+  }
+  .div{
+    gap: 4rem;
+  }
     
 }

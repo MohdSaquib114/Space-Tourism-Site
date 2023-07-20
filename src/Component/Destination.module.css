@@ -23,6 +23,10 @@
    align-self: start;
 
 
+
+}
+.img{
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .h3>span{
  
@@ -76,20 +80,24 @@
     font-family: 'Bellefair', serif;
     /* line-height: .1rem; */
  margin: 1rem 0;
+ animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .p{
     color: rgb(208,214,249);
     font-family:  'Barlow Condensed', sans-serif; 
     font-size: 1.2rem;
     line-height: 2rem;
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .hr{
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
     border:0.5px solid rgb(183, 188, 215);
     margin: 1.5rem 0;
 }
 .specContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .specContainer>h5>span{
     display: block;
@@ -108,6 +116,18 @@
 }
 .article{
     width: 500px;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    
 }
 @media (max-width:970px) {
     .section{

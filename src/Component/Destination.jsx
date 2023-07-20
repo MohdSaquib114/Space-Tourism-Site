@@ -15,15 +15,15 @@ const Destination = () => {
     <section className={style.section}>
       <h3 className={style.h3}><span>01</span> PICK YOUR DESTINATION</h3>
       <div className={style.container}>
-      <img className={style.img} src={currentDestination.image} alt={'terrestial-body-img'}/>  
+      <img key={Math.random()} className={style.img} src={currentDestination.image} alt={'terrestial-body-img'}/>  
       <article className={style.article}>
         <ul className={style.ul} >
         {destination.map((destination,index)=><li  key={destination.destination} className={destination.isClicked?style.liIsClicked:style.li} onClick={()=>onDestiinationChng(index)} >{destination.destination}</li>)}
         </ul>
-        <h1 className={style.h1}>{currentDestination.destination}</h1>
-        <p className={style.p}>{currentDestination.about}</p>
-        <hr className={style.hr}/>
-        <div className={style.specContainer}>
+        <h1 key={Math.random()} className={style.h1}>{currentDestination.destination}</h1>
+        <p key={Math.random()} className={style.p}>{currentDestination.about}</p>
+        <hr  key={Math.random()} className={style.hr}/>
+        <div key={Math.random()} className={style.specContainer}>
           <h5><span>AVG. DISTANCE</span>{currentDestination.distance}</h5>
           <h5><span>EST. TIME TRAVEL</span>{currentDestination.time}</h5>
         </div>
