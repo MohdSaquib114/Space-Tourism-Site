@@ -55,8 +55,8 @@ font-family: 'Barlow Condensed', sans-serif;
 all: unset;
 cursor: pointer;
 align-self: center;
-font-size: 1rem;
-letter-spacing: .2rem;
+font-size: .6rem;
+/* letter-spacing: .2rem; */
 
 }
 .ul >li{

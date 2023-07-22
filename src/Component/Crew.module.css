@@ -88,7 +88,7 @@
     font-weight: 400;
     mix-blend-mode: normal;
 opacity: 0.5;
-line-height: 37px;
+line-height: 15px;
 animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .h1{
@@ -98,7 +98,7 @@ animation: fade-in ease-in 0.5s  0s 1 normal forwards;
     font-style: normal;
     font-weight: 400;
     color: #FFFFFF;
-    line-height: 8rem;
+    line-height: 4rem;
     animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .p{
@@ -109,7 +109,7 @@ animation: fade-in ease-in 0.5s  0s 1 normal forwards;
     height: 250px;
 font-weight: 400;
 font-size: 1.3rem;
-line-height: 2rem;
+/* line-height: 2rem; */
 color: #D0D6F9;
 animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 
