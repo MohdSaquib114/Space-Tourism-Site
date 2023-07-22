@@ -1,7 +1,10 @@
-// import React from 'react'
+// import React from 'react-r'
+import { useNavigate } from 'react-router-dom'
 import style from './Home.module.css'
 
 const Home = () => {
+  const navigate = useNavigate()
+const chngRoutHndlr = ()=> navigate('/destination')
   return (
    <section className={style.section}>
 <article className={style.article}>
@@ -12,7 +15,7 @@ const Home = () => {
      of on the edge of it. Well sit back, and relax because 
      we’ll give you a truly out of this world experience!</p>
 </article>
-<button className={style.btn}>
+<button className={style.btn} onClick={chngRoutHndlr}>
  <div> EXPLORE</div>
 </button>
    </section>

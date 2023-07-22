@@ -9,7 +9,7 @@ const NavBar = ({width}) => {
   const [isClicked,setCLicked] = useState(true)
   const [clickArr,setClickArr] = useState([true,false,false,false])
 const hmbrgrBtn = isClicked ?'block':'none'
-const sideBar = !isClicked?'0px':'-1000px'
+const sideBar = !isClicked && width<480 ?'0px':'600px'
 const clickHandler =(index)=>{
   const newArr =clickArr.map((val,i)=>{
     if(i===index) return true
@@ -17,14 +17,17 @@ const clickHandler =(index)=>{
   })
   setClickArr(newArr)
 }
+const stylesT = {
+  transform: width<480?`translateX(${sideBar})`:'none',
+};
 
 
 return <nav className={style.nav}>
    <img className={style.logo} src={logo} alt="logo-img" />
  {width>1000 &&  <div className={style.line}></div>}
- 
-  <ul className={style.ul} style={{right:`${sideBar}`}} onClick={()=>setCLicked(!isClicked)}>
-    {width<630 && <img onClick={()=>setCLicked(true)} className={style.closeBtn} src={closeBtn} alt="close-btn-img" />}
+ <div className={style.ulContainer} style={stylesT}>
+  <ul className={style.ul}  onClick={()=>setCLicked(!isClicked)}>
+    {width<630 && <img key={width}  onClick={()=>setCLicked(true)} className={style.closeBtn} src={closeBtn} alt="close-btn-img" />}
       <li onClick={()=>clickHandler(0)} className={clickArr[0]?style.clicked:style.unclicked}>
         <Link className={style.link} to='/'>00 HOME</Link>
       </li>
@@ -39,8 +42,8 @@ return <nav className={style.nav}>
       </li>
 
    </ul>
-   
-   {width<630 && <img onClick={()=>setCLicked(false)} style={{display:`${hmbrgrBtn}`}} className={style.hamburgerLogo} src={hamBurgerBtn} alt="slide-in-btn-img" />}
+   </div>
+   {width<630 && <img key={Math.random()} onClick={()=>setCLicked(false)} style={{display:`${hmbrgrBtn}`}} className={style.hamburgerLogo} src={hamBurgerBtn} alt="slide-in-btn-img" />}
   
 </nav>
 }

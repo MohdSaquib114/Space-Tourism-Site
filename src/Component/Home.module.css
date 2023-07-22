@@ -22,7 +22,7 @@
     justify-self: center;
    
     text-align: left;
-    word-break: break-all;
+    word-break: keep-all;
     text-align: center;
 }
 /* .article >p{
@@ -32,21 +32,22 @@
 */
 
 .article>h5{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    margin-bottom: 7rem;
     font-family: 'Barlow Condensed', sans-serif;  
     font-weight: 300;
 
 } 
    .article >p{ 
     font-family: 'Barlow Condensed', sans-serif;  
-    font-size: 1.3rem;
+    font-size: 1.6rem;
    }
 
 .article>h1{
     font-family: 'Bellefair', serif;
-    font-size: 7rem;
+    font-size: 8rem;
     letter-spacing: .8rem;
-    margin: 5rem 0 5rem 0;
+    margin: 7rem 0 ;
 }
 .btn{
     display: grid;
@@ -109,7 +110,7 @@
        /* margin-left: 2rem; */
     }
     .article>h5{
-        font-size: .8rem;
+        font-size: 1rem;
         /* letter-spacing: .5rem; */
     }
     .article>h1{
@@ -137,7 +138,7 @@
         
     }
     .article>h1{
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     .article>h5{
 font-size: .6rem;
@@ -145,7 +146,7 @@ letter-spacing: 0;
 
     }
     .article>p{
-        font-size: .6rem;
+        font-size: .8rem;
         line-height: 1.2rem;
     }
     .btn{
