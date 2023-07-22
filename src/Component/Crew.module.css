@@ -59,8 +59,8 @@
 
 .img{
     grid-area: image;
-  width: 750px;
-  height: 750px;
+  width: 550px;
+  height: 550px;
   animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 }
 .btnContainer{

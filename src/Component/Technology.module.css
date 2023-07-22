@@ -41,8 +41,8 @@ align-self: center;
 .img{
     grid-area: image;
     justify-self: end;
-    height: 600px;
-    width: 500px;
+    height: 450px;
+    width: 350px;
     animation: fade-in ease-in 0.5s  0s 1 normal forwards;
 
 }
