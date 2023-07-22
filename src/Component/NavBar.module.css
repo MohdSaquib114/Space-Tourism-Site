@@ -56,7 +56,7 @@ all: unset;
 cursor: pointer;
 align-self: center;
 font-size: .8rem;
-/* letter-spacing: .2rem; */
+letter-spacing: .1rem;
 
 }
 .ul >li{
